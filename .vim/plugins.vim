@@ -3,13 +3,17 @@ call vundle#begin()
 let g:clang_c_options = '-std=gnu11'
 Plugin 'VundleVim/Vundle.vim'
 
-" Here we are going to add new Plugins
-Plugin 'scrooloose/nerdtree'
+" (*) Here add plugins lines
+Plugin 'MarcWeber/vim-addon-mw-utils'
+
+Plugin 'preservim/nerdtree'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-python/python-syntax'
-Plugin 'neoclide/coc.nvim'
-Plugin 'puremourning/vimspector'
-Plugin 'artanikin/vim-synthwave84'
+Plugin 'https://github.com/puremourning/vimspector'
+Plugin '907th/vim-auto-save'
+Plugin 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
+Plugin 'https://github.com/morhetz/gruvbox'
+Plugin 'https://github.com/turbio/bracey.vim'
 
-call vundle#end() " required
-filetype plugin indent on " required
-
+call vundle#end()
+let g:vimspector_enable_mappings = 'HUMAN'
