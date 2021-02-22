@@ -1,1 +1,1 @@
-# My sensual configuration
+# My sensual vim configuration
